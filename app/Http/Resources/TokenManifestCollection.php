@@ -23,7 +23,7 @@ class TokenManifestCollection extends ResourceCollection
                 "minor" => 0,
                 "patch" => 1,
             ],
-            //      "logoURI" => "https://1coin.io/images/1coin256.png",
+            "logoURI" => 'https://raw.githubusercontent.com/compound-finance/token-list/master/assets/ctoken_usdc.svg',
             "timestamp" => Carbon::now(),
             "keywords" => [
                 "tokens",
@@ -31,5 +31,10 @@ class TokenManifestCollection extends ResourceCollection
             ],
             "tokens" => AssetResource::collection($this->collection)
         ];
+    }
+
+    public function withResponse($request, $response)
+    {
+        $response->setEncodingOptions(JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
     }
 }

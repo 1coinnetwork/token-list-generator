@@ -16,6 +16,7 @@ class AssetResource extends JsonResource
             "symbol" => $this->symbol,
             "decimals" => ($this->decimals) ? $this->decimals : 18,
             "address" => $this->contract_address,
+            "logoURI" => 'https://raw.githubusercontent.com/compound-finance/token-list/master/assets/ctoken_usdc.svg'
             //      "logoURI" => ($this->logoURI) ?                $this->logoURI
             //          : $logouri
         ];
