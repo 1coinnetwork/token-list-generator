@@ -3,7 +3,7 @@
 
 Route::get('/', fn () => redirect()->route('manifest'));
 
-Route::group(['namespace' => 'Api'], function () {
+Route::group(['middleware' => 'api', 'namespace' => 'Api'], function () {
 
     Route::get('1.json', 'ManifestController')->name('manifest');
 
