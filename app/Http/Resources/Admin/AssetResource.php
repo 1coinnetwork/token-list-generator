@@ -16,8 +16,8 @@ class AssetResource extends JsonResource
             "symbol" => $this->symbol,
             "decimals" => ($this->decimals) ? $this->decimals : 18,
             "address" => $this->contract_address,
-            "logoURI" => ($this->logoURI) ?                $this->logoURI
-                : $logouri
+            //      "logoURI" => ($this->logoURI) ?                $this->logoURI
+            //          : $logouri
         ];
     }
 }

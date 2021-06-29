@@ -23,7 +23,7 @@ class TokenManifestCollection extends ResourceCollection
                 "minor" => 0,
                 "patch" => 1,
             ],
-            "logoURI" => "https://1coin.io/images/1coin256.png",
+            //      "logoURI" => "https://1coin.io/images/1coin256.png",
             "timestamp" => Carbon::now(),
             "keywords" => [
                 "tokens",
