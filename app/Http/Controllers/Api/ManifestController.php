@@ -10,6 +10,6 @@ class ManifestController extends Controller
 {
     public function __invoke()
     {
-        return (new TokenManifestCollection(Asset::with('network')->get()));
+        return (new TokenManifestCollection(Asset::with('network')->orderBy('network_id')->get()));
     }
 }
